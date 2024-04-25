@@ -16,6 +16,7 @@
     "serve": "ts-node src/server.ts"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "package": "^1.0.1",
     "prettier": "^2.2.1",
     "typescript": "^4.2.4",

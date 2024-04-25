@@ -1,6 +1,6 @@
 import { API, Payee, SaveTransaction as YnabTransaction, TransactionDetail } from "ynab";
+import config from '../config';
 
-const config = require("../config.json");
 const YNAB_BUDGET_ID = config.ynabBudgetId || "";
 const YNAB_API_KEY = config.ynabApiSecret || "";
 
