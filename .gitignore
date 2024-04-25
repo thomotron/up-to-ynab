@@ -9,5 +9,3 @@ dist
 *.iml
 src/accountMapping.*
 !src/accountMapping.example.json
-src/config.*
-!src/config.example.json

@@ -1,6 +1,8 @@
 import { TransactionResource as UpTransaction } from "up-bank-api";
 import { SaveTransaction as YnabTransaction } from "ynab/dist/api";
-import * as ACCOUNT_MAPPING_LIST from "./accountMapping.json";
+import { readFileSync } from 'fs';
+
+const ACCOUNT_MAPPING_LIST = JSON.parse(readFileSync("./accountMapping.json", "utf8"));
 
 type AccountMapping = {
   name: string;

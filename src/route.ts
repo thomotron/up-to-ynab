@@ -3,8 +3,8 @@ import { createHmac } from "crypto";
 import { transactionCreated, transactionUpdated } from "./processing";
 import * as Koa from "koa";
 import * as bodyParser from "koa-bodyparser";
+import config from './config';
 
-const config = require("./config.json");
 const app = new Koa();
 
 app.use(bodyParser());

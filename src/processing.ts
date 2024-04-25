@@ -2,8 +2,8 @@ import { UpApi, TransactionResource as UpTransaction, Relationship, Relationship
 import { SaveTransaction as YnabTransaction } from "ynab/dist/api";
 import { createTransaction, getPayees, updateTransaction } from "./ynab/api";
 import { upAccountIdToYnabAccountId, upToYnabTransaction } from "./transformer";
+import config from './config';
 
-const config = require("./config.json");
 const up = new UpApi(config.upApiSecret || "");
 
 async function buildYnabCreateTransaction(upTransaction: UpTransaction): Promise<YnabTransaction | null> {
